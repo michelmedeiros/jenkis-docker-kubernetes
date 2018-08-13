@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:2.112
 
-LABEL Author="Rodrigo Martinez da Rocha" 
+LABEL Author="Michel Medeiros"
 
 ARG master_image_version="v.2.2.1"
 ENV master_image_version $master_image_version
@@ -22,4 +22,4 @@ COPY src/main/resources/*.properties /var/jenkins_home/config/
 COPY src/main/resources/initials/*.file /var/jenkins_home/config/initials/
 
 # Para configuracoes de Seguranca
-COPY .ssh/* /var/jenkins_home/.ssh/
+#COPY .ssh/* /var/jenkins_home/.ssh/
